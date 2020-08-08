@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="">
+    );
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.1)), url(../img/k2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* nav-section start */
+nav{
+    width: 100%;
+    height: 15vh;
+    background: rgba(0,0,0,0.2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+
+}
+
+nav .logo{
+    width: 25%;
+    text-align: center;
+    color: white;
+}
+
+nav .menu{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    }
+
+nav .menu a{
+    width: 25%;
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+
+}
+
+nav .menu a:first-child{
+    color: #4c54a0;
+}
+/* nav-section end */
+
+/* main section start */
+main{
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+section{
+
+}
+
+section h3{
+    font-size: 25pxp; 
+    font-weight: 400; 
+    letter-spacing: 3px;
+    text-shadow: 1px 2px black;
+
+}
+
+section h1{
+    margin: 30px 0 20px 0;
+    font-size: 50px;
+    text-transform: uppercase;
+    text-shadow: 2px 1px 5px black;
+    font-weight: 700;
+}
+
+section p{
+    font-size: 25px;
+    margin-bottom: 25px;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 1px black;
+}
+
+section a{
+    padding: 12px 30px;
+    border-radius: 4px;
+    outline: none;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: 3s all ease;
+}
+
+section .btnone{
+    background-color: transparent;
+    border: 4px solid #fff;
+    color: #fff;
+}
+
+section .btnone:hover{
+    background-color: #fff;
+    border: 4px solid #4c54a0;
+    color: #000;
+}
+
+section .btntwo{
+    background-color: transparent;
+    border: 4px solid #4c54a0;
+    color: #fff;
+}
+
+section .btntwo:hover{
+    background-color: #4c54a0;
+    border: 4px solid #fff;
+    color: #000;
+}
+
+.change_content:after{
+    content: '';
+    animation: changetext 10s infinite linear;
+    color: #4c54a0;
+}
+
+@keyframes changetext {
+    0%{content: "darjilling";}
+    20%{content: "kalingpong";}
+    40%{content: "sandakfu";}
+    60%{content: "iche gaon";}
+    80%{content: "slik rout";}
+    100%{content: "gangtok";}
+}
+/* main section end */
